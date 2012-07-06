@@ -49,4 +49,4 @@ Add it to `Gemfile` and you're all set. Be sure to only activate it in `test` an
 
 ## Author
 
-Tatsuhiko Miyagawa
+Tatsuhiko Miyagawa ([@miyagawa](https://github.com/miyagawa)), inspired by the ideas from Kenta Murata ([@mrkn](https://github.com/mrkn)) and Shingo Morita ([@eudoxa](https://github.com/eudoxa)).
