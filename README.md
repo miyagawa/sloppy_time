@@ -16,7 +16,9 @@ class Post < ActiveRecord::Base
 end
 ```
 
-This gem tries to detect such mistakes by overriding `Time.now`, `Date.today` and `DateTime.now` and scanning the caller code if the line matches with `/(named_)?scope/`. (I know it's naive. Pull requests are welcome if you have an idea to make it more robust)
+This gem tries to detect such mistakes by overriding `Time.now`, `Date.today` and `DateTime.now` and scanning the caller code if the line matches with `/(named_)?scope/`. (Yeah it's silly)
+
+The idea is to enable this gem with the `test` bundler group and running your unit tests will emit the warnings like following:
 
 ```
 WARNING: Your model has a scope with Time evaluated immediately. You might have to use lambda instead.
